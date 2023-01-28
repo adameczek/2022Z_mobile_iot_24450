@@ -1,1 +1,0 @@
-C:\studia\mobilki\mslearn-dotnetmaui-customize-xaml-pages-layout\exercise2\TipCalculator\TipCalculator.csproj;x64
