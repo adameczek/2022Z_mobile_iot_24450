@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mobile_iot_lab03", "mobile_iot_lab03\mobile_iot_lab03.csproj", "{33716439-C568-45F2-8607-03DDE14DC43E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "notes", "notes\notes.csproj", "{33716439-C568-45F2-8607-03DDE14DC43E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
