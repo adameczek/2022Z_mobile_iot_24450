@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile_iot_lab03.MainPage"
+             xmlns:mycode="clr-namespace:mobile_iot_lab03"
+             xmlns:notes="clr-namespace:mobile_iot_lab03"
+             >
+
+    <VerticalStackLayout Margin="15" Padding="30, 60, 30, 30" x:Name="MyStackLayout">
+        <Label Text="Notes"
+               HorizontalOptions="Center"
+               FontAttributes="Bold" 
+               FontSize="{mycode:GlobalFontSize}"
+               TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+               />
+        <Editor x:Name="editor"
+                Placeholder="Enter your note"
+                HeightRequest="{OnPlatform 100, Android=500, iOS=500}"
+                TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+        />
+        <Grid ColumnDefinitions="Auto, 30, Auto">
+            <Button Grid.Column="0"
+                    Text="Save" 
+                    WidthRequest="100"
+                    TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+                    BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="2"
+                    Text="Delete" 
+                    TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+                    BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+                    WidthRequest="100"
+                    Clicked="OnDeleteButtonClicked" />
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>
